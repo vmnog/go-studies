@@ -245,7 +245,7 @@ package main
 func SumAllTails(tailsToSum... []int) []int {
   var sums []int 
   for _, numbers := range tailsToSum {
-    // sums = append(sums, numbers[len(numbers) - 1])
+    // sums = append(sums, Sum(numbers[len(numbers) - 1]))
     // Slices can be sliced! The syntax is slice[low:high]
     sums = append(sums, Sum(numbers[1:]))
   }
